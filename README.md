@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NÓDICA | Mystery Shopping y Auditoría de Servicio al Cliente</title>
+  <meta
+    name="description"
+    content="NÓDICA convierte experiencias de servicio en métricas accionables para equipos que quieren mejorar con precisión humana."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: "#2D5A27",
+            cream: "#F5F2ED",
+            terracotta: "#D47A5D",
+            charcoal: "#333333"
+          },
+          fontFamily: {
+            display: ["Fredoka One", "cursive"],
+            sans: ["Inter", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 18px 50px rgba(45, 90, 39, 0.10)",
+            lift: "0 24px 70px rgba(51, 51, 51, 0.12)"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background: #F5F2ED;
+      color: #333333;
+    }
+
+    .logo-face {
+      letter-spacing: 0;
+    }
+
+    .organic-grid {
+      background-image:
+        linear-gradient(rgba(45, 90, 39, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 90, 39, 0.08) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: radial-gradient(circle at center, black 0%, transparent 72%);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <header class="sticky top-0 z-50 border-b border-forest/10 bg-cream/90 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8" aria-label="Navegación principal">
+      <a href="#" class="flex items-center gap-3" aria-label="NÓDICA inicio">
+        <span class="font-display text-3xl leading-none text-forest sm:text-4xl">
+          N<span class="logo-face text-terracotta">ÓD</span>ICA
+        </span>
+      </a>
+
+      <div class="hidden items-center gap-8 text-sm font-semibold text-forest md:flex">
+        <a href="#servicios" class="transition hover:text-terracotta">Servicios</a>
+        <a href="#metodologia" class="transition hover:text-terracotta">Metodología</a>
+        <a href="#impacto" class="transition hover:text-terracotta">Impacto</a>
+        <a href="#contacto" class="transition hover:text-terracotta">Contacto</a>
+      </div>
+
+      <a
+        href="#contacto"
+        class="inline-flex min-h-11 items-center justify-center rounded-full bg-terracotta px-5 text-sm font-bold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-[#C6684D] focus:outline-none focus:ring-4 focus:ring-terracotta/25"
+      >
+        Agendar diagnóstico
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden bg-cream">
+      <div class="organic-grid absolute inset-y-0 right-0 hidden w-1/2 opacity-80 lg:block" aria-hidden="true"></div>
+      <div class="mx-auto grid min-h-[calc(100vh-76px)] max-w-7xl items-center gap-14 px-5 py-16 sm:px-8 lg:grid-cols-[1.04fr_0.96fr] lg:py-20">
+        <div class="max-w-3xl">
+          <p class="mb-5 inline-flex rounded-full border border-forest/15 px-4 py-2 text-sm font-bold text-forest">
+            Mystery shopping + auditoría de experiencia
+          </p>
+          <h1 class="font-display text-5xl leading-[0.95] text-forest sm:text-6xl lg:text-7xl">
+            Auditando el Servicio con Precisión Humana
+          </h1>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-charcoal sm:text-xl">
+            Observamos cada punto de contacto con mirada analítica y criterio humano para convertir la experiencia real de tus clientes en decisiones claras, medibles y accionables.
+          </p>
+
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#contacto"
+              class="inline-flex min-h-12 items-center justify-center rounded-full bg-terracotta px-7 text-base font-bold text-white shadow-lift transition hover:-translate-y-0.5 hover:bg-[#C6684D] focus:outline-none focus:ring-4 focus:ring-terracotta/25"
+            >
+              Solicitar auditoría
+            </a>
+            <a
+              href="#metodologia"
+              class="inline-flex min-h-12 items-center justify-center rounded-full border border-forest/25 px-7 text-base font-bold text-forest transition hover:border-forest hover:bg-forest hover:text-white focus:outline-none focus:ring-4 focus:ring-forest/15"
+            >
+              Ver metodología
+            </a>
+          </div>
+
+          <div class="mt-12 grid max-w-2xl grid-cols-3 gap-4 border-t border-forest/10 pt-8">
+            <div>
+              <p class="font-display text-3xl text-forest">360°</p>
+              <p class="mt-1 text-sm font-medium text-charcoal/75">evaluación integral</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl text-forest">24h</p>
+              <p class="mt-1 text-sm font-medium text-charcoal/75">hallazgos críticos</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl text-forest">GT</p>
+              <p class="mt-1 text-sm font-medium text-charcoal/75">enfoque local</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-lg border border-forest/10 bg-white/55 p-5 shadow-lift backdrop-blur">
+            <div class="rounded-lg bg-forest p-6 text-cream">
+              <div class="mb-8 flex items-center justify-between">
+                <span class="text-sm font-bold uppercase tracking-[0.18em] text-cream/70">Panel de experiencia</span>
+                <span class="rounded-full bg-terracotta px-3 py-1 text-xs font-extrabold text-white">Activo</span>
+              </div>
+
+              <div class="space-y-5">
+                <div>
+                  <div class="mb-2 flex items-center justify-between text-sm font-semibold">
+                    <span>Claridad de atención</span>
+                    <span>91%</span>
+                  </div>
+                  <div class="h-3 rounded-full bg-cream/20">
+                    <div class="h-3 w-[91%] rounded-full bg-terracotta"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="mb-2 flex items-center justify-between text-sm font-semibold">
+                    <span>Tiempo de respuesta</span>
+                    <span>78%</span>
+                  </div>
+                  <div class="h-3 rounded-full bg-cream/20">
+                    <div class="h-3 w-[78%] rounded-full bg-terracotta"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="mb-2 flex items-center justify-between text-sm font-semibold">
+                    <span>Cierre comercial</span>
+                    <span>84%</span>
+                  </div>
+                  <div class="h-3 rounded-full bg-cream/20">
+                    <div class="h-3 w-[84%] rounded-full bg-terracotta"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 grid grid-cols-2 gap-4">
+                <div class="rounded-lg bg-cream p-4 text-charcoal">
+                  <p class="text-xs font-bold uppercase tracking-[0.14em] text-forest/70">Hallazgo</p>
+                  <p class="mt-3 text-2xl font-extrabold text-forest">12</p>
+                  <p class="mt-1 text-sm text-charcoal/70">momentos críticos</p>
+                </div>
+
+                <div class="rounded-lg bg-cream p-4 text-charcoal">
+                  <p class="text-xs font-bold uppercase tracking-[0.14em] text-forest/70">Prioridad</p>
+                  <p class="mt-3 text-2xl font-extrabold text-forest">Alta</p>
+                  <p class="mt-1 text-sm text-charcoal/70">acciones sugeridas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
